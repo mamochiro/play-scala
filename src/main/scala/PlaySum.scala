@@ -19,4 +19,10 @@ object PlaySum  extends  App {
 
   val a = mySum2(List(20,30))
   println(a)
+
+//  curry  function
+  def add(x: Int)(y:Int) : Int = x + y
+  val plus3 = add(3)(7)
+
+  println(plus3)
 }
